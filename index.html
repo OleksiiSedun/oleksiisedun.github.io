@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QA Daily Report Form</title>
+</head>
+
+<body>
+  <h2 class="content-head is-center">QA Daily Report</h2>
+  <aside>
+    <p>Please fill out the form <b><em>carefully</em></b>.</p>
+  </aside>
+
+  <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <!-- Style The Contact Form How Ever You Prefer -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Submit the Form to Google Using "AJAX" -->
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+
+  <form id="gform" method="POST" class="pure-form pure-form-stacked"
+  action="https://script.google.com/macros/s/AKfycbz8_MOVJrDz7irSy0mOmYNLAC1QrpL1UQ1WNsBDkhPA6KV8mA4/exec">
+
+    <label for="QA_Code">QA Code: </label>
+    <input id="QA_Code" name="QA_Code" placeholder="LS" />
+
+    <label for="Summary">Report Summary: </label>
+    <textarea id="Summary" name="Summary" rows="3"
+    placeholder="Tell me what did you do today..."></textarea>
+
+    <table>
+      <tr>
+        <td>
+          <label for="General_Tasks">General Tasks</label>
+          <input id="General_Tasks" name="General_Tasks" placeholder="0"/>
+        </td>
+        <td>
+          <label for="Documentation">Documentation</label>
+          <input id="Documentation" name="Documentation" placeholder="0"/>
+        </td>
+        <td>
+          <label for="Automation">Automation</label>
+          <input id="Automation" name="Automation" placeholder="0"/>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="P2G">P2G</label>
+          <input id="P2G" name="P2G" placeholder="0"/>
+        </td>
+        <td>
+          <label for="P4T">P4T</label>
+          <input id="P4T" name="P4T" placeholder="0"/>
+        </td>
+        <td>
+          <label for="PT">PT</label>
+          <input id="PT" name="PT" placeholder="0"/>
+        </td>
+        <td>
+          <label for="N2Y">N2Y</label>
+          <input id="N2Y" name="N2Y" placeholder="0"/>
+        </td>
+        <td>
+          <label for="CK">CK</label>
+          <input id="CK" name="CK" placeholder="0"/>
+        </td>
+        <td>
+          <label for="GR">GR</label>
+          <input id="GR" name="GR" placeholder="0"/>
+        </td>
+        <td>
+          <label for="IVX">IVX</label>
+          <input id="IVX" name="IVX" placeholder="0"/>
+        </td>
+      </tr>
+    </table>
+
+    <button class="button-success pure-button button-xlarge">
+    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+  </form>
+  <!-- Thankyou Message People See when they submit the form: -->
+  <div style="display:none;" id="thankyou_message">
+    <h2><em>Thanks</em> for submitting your report.
+      Have a nice evening!</h2>
+  </div>
+</body>
+</html>

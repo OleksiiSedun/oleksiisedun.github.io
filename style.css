@@ -8,9 +8,6 @@ aside {
     color: #fff;
     margin-bottom: 2em;
 }
-textarea {
-  width: 50%;
-}
 .content-head {
   font-weight: 400;
   text-transform: uppercase;
@@ -27,17 +24,19 @@ textarea {
   background: rgb(28, 184, 65); /* this is a green */
 }
 .button-xlarge {
-  font-size: 125%;
+  font-size: 100%;
 }
 button {
-  float: right;
-}
-#QA_Code {
-  width: 5%;
+  float: center;
 }
 input {
-  width: 35%;
+  width: 70px;
 }
-table {
-  width: 75%;
+textarea {
+  width: 170px;
+}
+table, td {
+    vertical-align: center;
+    text-align: center;
+    padding: 1px;
 }

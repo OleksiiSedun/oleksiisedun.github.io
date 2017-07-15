@@ -21,63 +21,86 @@
 
   <form id="gform" method="POST" class="pure-form pure-form-stacked"
   action="https://script.google.com/macros/s/AKfycbz8_MOVJrDz7irSy0mOmYNLAC1QrpL1UQ1WNsBDkhPA6KV8mA4/exec">
-
-    <label for="QA_Code">QA Code: </label>
-    <input id="QA_Code" name="QA_Code" placeholder="LS" />
-
-    <label for="Summary">Report Summary: </label>
-    <textarea id="Summary" name="Summary" rows="3"
-    placeholder="Tell me what did you do today..."></textarea>
-
     <table>
       <tr>
         <td>
-          <label for="General_Tasks">General Tasks</label>
-          <input id="General_Tasks" name="General_Tasks" placeholder="0"/>
-        </td>
+          <label>QAC</label>
         <td>
-          <label for="Documentation">Documentation</label>
-          <input id="Documentation" name="Documentation" placeholder="0"/>
-        </td>
+          <input name="QAC" placeholder="LS"/>
         <td>
-          <label for="Automation">Automation</label>
-          <input id="Automation" name="Automation" placeholder="0"/>
-        </td>
-      </tr>
+          <button class="button-success pure-button button-xlarge">
+          <i class="fa fa-paper-plane"></i>&nbsp;Send Report</button>
       <tr>
         <td>
-          <label for="P2G">P2G</label>
-          <input id="P2G" name="P2G" placeholder="0"/>
-        </td>
+          <label>GEN</label>
         <td>
-          <label for="P4T">P4T</label>
-          <input id="P4T" name="P4T" placeholder="0"/>
-        </td>
+          <input name="GEN" placeholder="0.0"/>
         <td>
-          <label for="PT">PT</label>
-          <input id="PT" name="PT" placeholder="0"/>
-        </td>
+          <textarea name="GEN_D" rows="1" placeholder="Description"></textarea>
+      <tr>
         <td>
-          <label for="N2Y">N2Y</label>
-          <input id="N2Y" name="N2Y" placeholder="0"/>
-        </td>
+          <label>DOC</label>
         <td>
-          <label for="CK">CK</label>
-          <input id="CK" name="CK" placeholder="0"/>
-        </td>
+          <input name="DOC" placeholder="0.0"/>
         <td>
-          <label for="GR">GR</label>
-          <input id="GR" name="GR" placeholder="0"/>
-        </td>
+          <textarea name="DOC_D" rows="1" placeholder="Description"></textarea>
+      <tr>
         <td>
-          <label for="IVX">IVX</label>
-          <input id="IVX" name="IVX" placeholder="0"/>
-        </td>
-      </tr>
+          <label>AUT</label>
+        <td>
+          <input name="AUT" placeholder="0.0"/>
+        <td>
+          <textarea name="AUT_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>P2G</label>
+        <td>
+          <input name="P2G" placeholder="0.0"/>
+        <td>
+          <textarea name="P2G_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>P4T</label>
+        <td>
+          <input name="P4T" placeholder="0.0"/>
+        <td>
+          <textarea name="P4T_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>PIC</label>
+        <td>
+          <input name="PIC" placeholder="0.0"/>
+        <td>
+          <textarea name="PIC_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>N2Y</label>
+        <td>
+          <input name="N2Y" placeholder="0.0"/>
+        <td>
+          <textarea name="N2Y_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>CKB</label>
+        <td>
+          <input name="CKB" placeholder="0.0"/>
+        <td>
+          <textarea name="CKB_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>GRW</label>
+        <td>
+          <input name="GRW" placeholder="0.0"/>
+        <td>
+          <textarea name="GRW_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>IVX</label>
+        <td>
+          <input name="IVX" placeholder="0.0"/>
+        <td>
+          <textarea name="IVX_D" rows="1" placeholder="Description"></textarea>
     </table>
-
-    <button class="button-success pure-button button-xlarge">
-    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
   </form>
   <!-- Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">

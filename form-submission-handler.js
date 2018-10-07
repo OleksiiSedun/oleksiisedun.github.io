@@ -1,35 +1,18 @@
 // get all data in form and return object
 function getFormData() {
   var elements = document.getElementById("gform").elements; // all form elements
+  
   var fields = Object.keys(elements).map(function(k) {
     if(elements[k].name !== undefined) {
       return elements[k].name;
-    // special case for Edge's html collection
-    } else if(elements[k].length > 0){
-      return elements[k].item(0).name;
-    }
+    } 
   }).filter(function(item, pos, self) {
     return self.indexOf(item) == pos && item;
   });
+  
   var data = {};
   fields.forEach(function(k) {
-    data[k] = elements[k].value;
-    // declare empty string outside of loop to allow it to be appended to for each item in the loop
-    var str = "";
-    // special case for Edge's html collection
-    if(elements[k].type === "checkbox") {
-      str = str + elements[k].checked + ", "; // take the string and append
-      // the current checked value to the end of it, along with a comma and a space
-      data[k] = str.slice(0, -2); // remove the last comma and space
-      // from the  string to make the output prettier in the spreadsheet
-    } else if(elements[k].length) {
-      for(var i = 0; i < elements[k].length; i++) {
-        if(elements[k].item(i).checked) {
-          str = str + elements[k].item(i).value + ", "; // same as above
-          data[k] = str.slice(0, -2);
-        }
-      }
-    }
+    data[k] = elements[k].value
   });
   console.log(data);
   return data;

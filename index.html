@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>QA Daily Report Form</title>
+  <title>QA Daily Report Submission Form</title>
 </head>
 
 <body>
-  <h2 class="content-head is-center">QA Daily Report</h2>
+  <h2 class="content-head is-center">QA Daily Report Submission Form</h2>
   <aside>
-    <p>Please fill out the form <b><em>carefully</em></b>.</p>
+    <p>Please fill out the form.</p>
   </aside>
 
   <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css">
@@ -50,6 +50,13 @@
           <input name="P2G" placeholder="0.0"/>
         <td>
           <textarea name="P2G_D" rows="1" placeholder="Description"></textarea>
+      <tr>
+        <td>
+          <label>POD</label>
+        <td>
+          <input name="POD" placeholder="0.0"/>
+        <td>
+          <textarea name="POD_D" rows="1" placeholder="Description"></textarea>
       <tr>
         <td>
           <label>P4T</label>
@@ -104,8 +111,7 @@
   </form>
   <!-- Thankyou Message People See when they submit the form: -->
   <div style="display:none;" id="thankyou_message">
-    <h2><em>Thanks</em> for submitting your report.
-      Have a nice evening!</h2>
+    <h2>Your report was submitted.</h2>
   </div>
 </body>
 </html>
